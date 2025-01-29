@@ -1,0 +1,32 @@
+frontend : 
+
+    -> npm i create vite@latest : for react
+    -> npm i axios react-router-dom react-toastify
+    -> npm install -D tailwindcss postcss autoprefixer : add tailwindcss
+                            -> npx tailwindcss init -p
+                            -> ( /** @type {import('tailwindcss').Config} */
+                                export default {
+                                content: [
+                                    "./index.html",
+                                    "./src/**/*.{js,ts,jsx,tsx}",
+                                ],
+                                theme: {
+                                    extend: {},
+                                },
+                                plugins: [],
+                                }
+                            )
+                            paste : index.css
+                            -> @tailwind base;
+                               @tailwind components;
+                               @tailwind utilities;
+
+Backend                           
+-> npm i express mongoose multer bcrypt dotenv cors cloudinary jsonwebtoken nodemon validator
+-> npm install razorpay for online payment method
+->started:npm run server
+
+
+admin: gmail->admin@gmail.com
+    :  password -> 12345678
+
